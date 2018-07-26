@@ -4,8 +4,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
+    setup_requires=['pbr'],
+    pbr=True,
     name="pangan",
-    version="0.0.2",
     author="Amir Mofakhar",
     author_email="amir@mofakhar.info",
     description="A small example package",
